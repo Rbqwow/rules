@@ -1,0 +1,5 @@
+PROCESS-NAME,BitComet_x64.exe
+PROCESS-NAME,BitComet.exe
+PROCESS-NAME,plugin_eMule.exe
+PROCESS-NAME,zerotier-one_x64.exe
+DOMAIN-SUFFIX,steamserver.net
