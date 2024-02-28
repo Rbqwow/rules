@@ -56,7 +56,7 @@ dns:
 hosts:
   "bigota.d.miui.com": 123.6.13.6
   "hugeota.d.miui.com": 123.6.13.6
-script:
-  engine: expr
-  shortcuts:
-    FKLoopback: resolve_process_name() == 'clash' and network == 'udp'
+# script:
+#   engine: expr
+#   shortcuts:
+#     FKLoopback: resolve_process_name() == 'clash' and network == 'udp'
