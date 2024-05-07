@@ -53,9 +53,6 @@ dns:
     geoip-code: CN
     ipcidr:
       - 240.0.0.0/4
-hosts:
-  "bigota.d.miui.com": 123.6.13.6
-  "hugeota.d.miui.com": 123.6.13.6
 # script:
 #   engine: expr
 #   shortcuts:
