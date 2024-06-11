@@ -20,7 +20,40 @@ dns:
   listen: 0.0.0.0:12353
   ipv6: true
   use-hosts: true
-  enhanced-mode: redir-host
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - "+.lan"
+    - "+.gstatic.com"
+    - "connect.rom.miui.com"
+    - "localhost.sec.qq.com"
+    - "localhost.ptlogin2.qq.com"
+    - "+.linksys.com"
+    - "+.pool.ntp.org"
+    - "+.stun.*.*"
+    - "+.stun.*.*.*"
+    - "+.stun.*.*.*.*"
+    - "+.stun.*.*.*.*.*"
+    - "+.msftconnecttest.com"
+    - "+.msftncsi.com"
+    - "lens.l.google.com"
+    - "+.srv.nintendo.net"
+    - "+.stun.playstation.net"
+    - "xbox.*.*.microsoft.com"
+    - "+.xboxlive.com"
+    - "+.mcdn.bilivideo.cn"
+    - "hiwifi.com"
+    - "leike.cc"
+    - "miwifi.com"
+    - "my.router"
+    - "peiluyou.com"
+    - "phicomm.me"
+    - "router.ctc"
+    - "routerlogin.com"
+    - "tendawifi.com"
+    - "tplinkwifi.net"
+    - "tplogin.cn"
+    - "zte.home"
   nameserver:
     - "https://223.5.5.5/dns-query"
     - "https://1.12.12.12/dns-query"
@@ -38,6 +71,9 @@ dns:
     "geosite:cn,private":
       - "https://223.5.5.5/dns-query"
       - "https://1.12.12.12/dns-query"
+    "geosite:geolocation-!cn":
+      - "https://1.1.1.1/dns-query"
+      - "https://8.8.8.8/dns-query"
 sniffer:
   enable: true
   force-dns-mapping: true
